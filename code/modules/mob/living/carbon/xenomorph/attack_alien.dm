@@ -513,12 +513,6 @@
 	healthcheck()
 	return XENO_ATTACK_ACTION
 
-/obj/structure/fence/electrified/attack_alien(mob/living/carbon/xenomorph/M)
-	if(src.electrified && !src.cut) //this is placeholder, needs to be updated
-		electrocute_xenomorph(M)
-	. = ..()
-
-
 //Slashin mirrors
 /obj/structure/mirror/attack_alien(mob/living/carbon/xenomorph/M)
 	M.animation_attack_on(src)
