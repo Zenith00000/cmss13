@@ -80,3 +80,9 @@
 	name = "Hybrisa Prospera - Weyland-Yutani Kelland Mining - Landing Zone two sign"
 	desc = "A large sign that reads 'WY - KMCC Mining - HBP - LZ - 01' The Kelland Mining logo is adorns the sign."
 	icon_state = "hybrisamining_sign"
+
+/obj/structure/lz_sign/isaacs_lament
+	name = "Isaac's Lament Sign"
+	desc = "A large sign for Isaac's Lament exhorting its values and organisations. It is smeared in blood and grafitti saying: Liar."
+	icon = 'icons/obj/structures/props/landing_signs_128_64.dmi'
+	icon_state = "isaacs_lament"

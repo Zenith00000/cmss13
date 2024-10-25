@@ -212,6 +212,22 @@
 	icon_state = "wood_window0_frame"
 	basestate = "wood_window"
 
+/obj/structure/window_frame/wood/plain
+	icon_state = "wood_plain_window0_frame"
+	basestate = "wood_window"
+
+/obj/structure/window_frame/wood/blue
+	icon_state = "wood_blue_window0_frame"
+	basestate = "wood_window"
+
+/obj/structure/window_frame/wood/green
+	icon_state = "wood_green_window0_frame"
+	basestate = "wood_window"
+
+/obj/structure/window_frame/wood/purple
+	icon_state = "wood_purple_window0_frame"
+	basestate = "wood_window"
+
 /obj/structure/window_frame/prison
 	icon_state = "prison_rwindow0_frame"
 	basestate = "prison_rwindow"

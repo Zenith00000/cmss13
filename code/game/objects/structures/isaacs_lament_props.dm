@@ -114,7 +114,7 @@
 	bound_width = 128
 	unslashable = TRUE
 	unacidable = TRUE
-	indestructible = TRUE
+	explo_proof = TRUE
 	density = FALSE
 	layer = BILLBOARD_LAYER
 

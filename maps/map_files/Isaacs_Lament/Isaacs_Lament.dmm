@@ -12043,7 +12043,7 @@
 	pixel_y = 32
 	},
 /obj/item/trash/cigbutt,
-/obj/structure/prop/hybrisa/signs/cafeesign{
+/obj/structure/roof/hybrisa/signs/cafesign{
 	light_color = "#00AAFF";
 	light_on = 1;
 	light_power = 3;
@@ -16199,7 +16199,7 @@
 /area/lv873/indoors/operations/hallway/north)
 "exK" = (
 /obj/structure/prop/hybrisa/fakeplatforms/platform5,
-/obj/structure/prop/hybrisa/signs/weymartsign{
+/obj/structure/roof/hybrisa/signs/weymartsign{
 	light_color = "#FF8A00";
 	light_on = 1;
 	light_power = 4;
@@ -20368,7 +20368,7 @@
 /turf/open/floor/wood,
 /area/lv873/indoors/lone_buildings/clf_barracks)
 "fKB" = (
-/obj/structure/prop/hybrisa/signs/opensign{
+/obj/structure/roof/hybrisa/signs/opensign{
 	icon_state = "open_on2";
 	light_color = "#00AAFF";
 	light_on = 1;
@@ -38022,7 +38022,7 @@
 /area/lv873/indoors/flooded/east_apartments)
 "kDa" = (
 /obj/effect/hybrisa/decal/dirt,
-/obj/structure/prop/hybrisa/signs/opensign{
+/obj/structure/roof/hybrisa/signs/opensign{
 	icon_state = "open_on2";
 	light_color = "#00AAFF";
 	light_on = 1;
@@ -39886,7 +39886,7 @@
 /turf/open/gm/dirtgrassborder/dirt/grassdirt_corner2/north_east,
 /area/lv873/oob)
 "ldN" = (
-/obj/structure/prop/hybrisa/signs/arcadesign{
+/obj/structure/roof/hybrisa/signs/arcadesign{
 	light_on = 1;
 	light_power = 3;
 	light_range = 4;
@@ -48961,7 +48961,7 @@
 	},
 /area/lv873/indoors/southwest/slums)
 "nCS" = (
-/obj/structure/prop/hybrisa/signs/cafeesign{
+/obj/structure/roof/hybrisa/signs/cafesign{
 	light_color = "#00AAFF";
 	light_on = 1;
 	light_power = 3;
@@ -55795,7 +55795,7 @@
 	},
 /area/lv873/indoors/lone_buildings/insurance)
 "psK" = (
-/obj/structure/prop/hybrisa/signs/opensign{
+/obj/structure/roof/hybrisa/signs/opensign{
 	icon_state = "open_on2";
 	light_color = "#00AAFF";
 	light_on = 1;
@@ -60327,7 +60327,7 @@
 /area/lv873/indoors/southeast/slums)
 "qFw" = (
 /obj/structure/flora/bush/ausbushes/var3/sparsegrass,
-/obj/structure/prop/hybrisa/signs/opensign{
+/obj/structure/roof/hybrisa/signs/opensign{
 	light_color = "#00AAFF";
 	light_on = 1;
 	light_power = 3;
@@ -61525,7 +61525,7 @@
 /turf/open/floor/bar,
 /area/lv873/indoors/hospital/research/reception)
 "qXi" = (
-/obj/structure/prop/hybrisa/signs/barsign{
+/obj/structure/roof/hybrisa/signs/barsign{
 	light_color = "#00AAFF";
 	light_on = 1;
 	light_power = 4;
@@ -63386,7 +63386,7 @@
 	pixel_x = 5;
 	pixel_y = 13
 	},
-/obj/structure/prop/hybrisa/signs/mechanicsign{
+/obj/structure/roof/hybrisa/signs/mechanicsign{
 	light_color = "#0085FF";
 	light_on = 1;
 	light_power = 3;
@@ -64100,7 +64100,7 @@
 	},
 /area/lv873/oob)
 "rGL" = (
-/obj/structure/prop/hybrisa/signs/barsign{
+/obj/structure/roof/hybrisa/signs/barsign{
 	light_color = "#00AAFF";
 	light_on = 1;
 	light_power = 4;
@@ -75872,7 +75872,7 @@
 	pixel_x = 2
 	},
 /obj/effect/hybrisa/decal/road/lines1,
-/obj/structure/prop/hybrisa/signs/opensign,
+/obj/structure/roof/hybrisa/signs/opensign,
 /turf/open/gm/road,
 /area/lv873/outdoors/colony_streets/southeast)
 "uQg" = (
@@ -76896,7 +76896,7 @@
 /turf/open/floor/bar,
 /area/lv873/indoors/hospital/reception)
 "vfb" = (
-/obj/structure/prop/hybrisa/signs/pizzasign{
+/obj/structure/roof/hybrisa/signs/pizzasign{
 	light_color = "#FF9100";
 	light_on = 1;
 	light_power = 4;
@@ -81176,7 +81176,7 @@
 "wpg" = (
 /obj/effect/hybrisa/decal/road/lines4,
 /obj/effect/hybrisa/decal/road/lines3,
-/obj/structure/prop/hybrisa/signs/pizzasign{
+/obj/structure/roof/hybrisa/signs/pizzasign{
 	light_color = "#FF9100";
 	light_on = 1;
 	light_power = 4;
@@ -85921,7 +85921,7 @@
 /turf/open/gm/dirtgrassborder/dirt/grassdirt_corner2/north_west,
 /area/lv873/outdoors/colony_streets/west)
 "xEV" = (
-/obj/structure/prop/hybrisa/signs/opensign{
+/obj/structure/roof/hybrisa/signs/opensign{
 	light_color = "#00AAFF";
 	light_on = 1;
 	light_power = 3;
@@ -87576,7 +87576,7 @@
 	},
 /area/lv873/indoors/flooded/west_apartments)
 "ybC" = (
-/obj/structure/prop/hybrisa/signs/opensign{
+/obj/structure/roof/hybrisa/signs/opensign{
 	light_color = "#00AAFF";
 	light_on = 1;
 	light_power = 3;

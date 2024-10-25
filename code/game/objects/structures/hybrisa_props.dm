@@ -1,5 +1,7 @@
 // Hybrisa props
 
+
+
 /obj/structure/prop/hybrisa
 	icon = 'icons/obj/structures/props/hybrisa_vehicles/small_truck_red.dmi'
 	icon_state = "pimp"
@@ -625,6 +627,27 @@
 	desc = "A basket full of apples."
 	icon_state = "supermarketbasket5"
 
+/obj/structure/prop/hybrisa/supermart/souto_man_prop
+	name = "Souto Man mannequin"
+	icon = 'icons/obj/structures/props/hybrisarandomprops.dmi'
+	desc = "A mannequin of the famous 'Souto-Man', Party like it's 1999!"
+	icon_state = "souto_man_prop"
+	density = TRUE
+
+/obj/structure/prop/hybrisa/supermart/souto_rack
+	name = "Souto cans rack"
+	icon = 'icons/obj/structures/props/hybrisarandomprops.dmi'
+	desc = "A rack filled with Souto cans of various flavors."
+	icon_state = "souto_rack"
+	density = TRUE
+
+/obj/structure/prop/hybrisa/supermart/souto_can_stack
+	name = "stacked souto cans"
+	icon = 'icons/obj/structures/props/hybrisarandomprops.dmi'
+	desc = "A large stack of 'Souto-Classic' cans."
+	icon_state = "souto_can_stack"
+	density = TRUE
+
 // Furniture
 /obj/structure/prop/hybrisa/furniture
 	icon = 'icons/obj/structures/props/hybrisatables.dmi'
@@ -748,6 +771,12 @@
 
 // Beds
 
+/obj/structure/bed/hybrisa/dingy
+	name = "dingy bed"
+	desc = "An old mattress seated on a rectangular metallic frame. This is used to support a lying person in a comfortable manner, notably for regular sleep. Ancient technology, but still useful."
+	icon_state = "bed_dingy"
+	icon = 'icons/obj/structures/props/hybrisarandomprops.dmi'
+
 /obj/structure/bed/hybrisa
 	icon = 'icons/obj/structures/props/hybrisarandomprops.dmi'
 	icon_state = "hybrisa"
@@ -777,6 +806,23 @@
 	name = "bunk bed"
 	desc = "A comfy looking bunk-bed."
 	icon_state = "zbunkbed4"
+
+// Cabinet
+
+/obj/structure/closet/cabinet/hybrisa/metal
+	name = "metal cabinet"
+	desc = "A large metal cabinet, looks sturdy."
+	icon = 'icons/obj/structures/props/hybrisarandomprops.dmi'
+	icon_state = "cabinet_metal_closed"
+	icon_closed = "cabinet_metal_closed"
+	icon_opened = "cabinet_metal_open"
+
+/obj/structure/closet/cabinet/hybrisa/metal/alt
+	name = "metal cabinet"
+	desc = "A large metal cabinet, looks sturdy."
+	icon_state = "cabinet_metal_alt_closed"
+	icon_closed = "cabinet_metal_alt_closed"
+	icon_opened = "cabinet_metal_alt_open"
 
 // Xenobiology
 
@@ -842,7 +888,7 @@
 	bound_width = 64
 	unslashable = TRUE
 	unacidable = TRUE
-	indestructible = TRUE
+	explo_proof = TRUE
 	density = FALSE
 	layer = ABOVE_XENO_LAYER
 
@@ -852,7 +898,7 @@
 	desc = "A strange ancient looking egg, it seems to be inert."
 	icon_state = "inertegg"
 	unslashable = TRUE
-	indestructible = TRUE
+	explo_proof = TRUE
 	layer = TURF_LAYER
 
 // Engineer
@@ -868,7 +914,7 @@
 	icon_state = "spacejockey"
 	unslashable = TRUE
 	unacidable = TRUE
-	indestructible = TRUE
+	explo_proof = TRUE
 	layer = ABOVE_MOB_LAYER
 
 /obj/structure/prop/hybrisa/engineer/giantpod/broken
@@ -936,7 +982,7 @@
 	bound_width = 32
 	unslashable = TRUE
 	unacidable = TRUE
-	indestructible = TRUE
+	explo_proof = TRUE
 	density = TRUE
 
 /obj/structure/prop/hybrisa/engineer/engineerpillar
@@ -946,7 +992,7 @@
 	bound_width = 128
 	unslashable = TRUE
 	unacidable = TRUE
-	indestructible = TRUE
+	explo_proof = TRUE
 	layer = ABOVE_MOB_LAYER
 
 /obj/structure/prop/hybrisa/engineer/engineerpillar/northwesttop
@@ -1046,44 +1092,44 @@
 /obj/structure/prop/hybrisa/airport/dropshipnosecone
 	name = "nose cone"
 	icon_state = "dropshipfrontwhite1"
-	indestructible = TRUE
+	explo_proof = TRUE
 	layer = ABOVE_MOB_LAYER
 	density = TRUE
 
 /obj/structure/prop/hybrisa/airport/dropshipwingleft
 	name = "wing"
 	icon_state = "dropshipwingtop1"
-	indestructible = TRUE
+	explo_proof = TRUE
 	layer = ABOVE_MOB_LAYER
 
 /obj/structure/prop/hybrisa/airport/dropshipwingright
 	name = "wing"
 	icon_state = "dropshipwingtop2"
-	indestructible = TRUE
+	explo_proof = TRUE
 	layer = ABOVE_MOB_LAYER
 
 /obj/structure/prop/hybrisa/airport/dropshipvent1left
 	name = "vent"
 	icon_state = "dropshipvent1"
-	indestructible = TRUE
+	explo_proof = TRUE
 	layer = ABOVE_MOB_LAYER
 
 /obj/structure/prop/hybrisa/airport/dropshipvent2right
 	name = "vent"
 	icon_state = "dropshipvent2"
-	indestructible = TRUE
+	explo_proof = TRUE
 	layer = ABOVE_MOB_LAYER
 
 /obj/structure/prop/hybrisa/airport/dropshipventleft
 	name = "vent"
 	icon_state = "dropshipvent3"
-	indestructible = TRUE
+	explo_proof = TRUE
 	layer = ABOVE_MOB_LAYER
 
 /obj/structure/prop/hybrisa/airport/dropshipventright
 	name = "vent"
 	icon_state = "dropshipvent4"
-	indestructible = TRUE
+	explo_proof = TRUE
 	layer = ABOVE_MOB_LAYER
 
 // Dropship damage
@@ -1097,7 +1143,7 @@
 	bound_width = 96
 	unslashable = TRUE
 	unacidable = TRUE
-	indestructible = TRUE
+	explo_proof = TRUE
 	gender = PLURAL
 
 /obj/structure/prop/hybrisa/airport/dropshipenginedamagenofire
@@ -1109,7 +1155,7 @@
 	bound_width = 96
 	unslashable = TRUE
 	unacidable = TRUE
-	indestructible = TRUE
+	explo_proof = TRUE
 	gender = PLURAL
 
 /obj/structure/prop/hybrisa/airport/refuelinghose
@@ -1187,7 +1233,7 @@
 	icon_state = "solidgrate2"
 	unslashable = TRUE
 	unacidable = TRUE
-	indestructible = TRUE
+	explo_proof = TRUE
 
 /obj/structure/prop/hybrisa/misc/floorprops/floorglass2
 	name = "reinforced glass floor"
@@ -1195,7 +1241,7 @@
 	icon_state = "solidgrate3"
 	unslashable = TRUE
 	unacidable = TRUE
-	indestructible = TRUE
+	explo_proof = TRUE
 	layer = ABOVE_TURF_LAYER
 
 /obj/structure/prop/hybrisa/misc/floorprops/floorglass3
@@ -1204,7 +1250,7 @@
 	icon_state = "solidgrate4"
 	unslashable = TRUE
 	unacidable = TRUE
-	indestructible = TRUE
+	explo_proof = TRUE
 
 // Graffiti
 
@@ -1312,7 +1358,18 @@
 	projectile_coverage = 20
 	throwpass = TRUE
 
+/obj/structure/prop/hybrisa/misc/elevator_door
+	name = "broken elevator door"
+	desc = "completely broken, the elevator is not going to work."
+	icon = 'icons/obj/structures/props/hybrisarandomprops.dmi'
+	icon_state = "elevator_left"
+	opacity = FALSE
+	unslashable = TRUE
+	unacidable = TRUE
+	explo_proof = TRUE
 
+/obj/structure/prop/hybrisa/misc/elevator_door/right
+	icon_state = "elevator_right"
 
 /obj/structure/prop/hybrisa/misc/trash
 	name = "trash bin"
@@ -1653,6 +1710,14 @@
 /obj/structure/prop/hybrisa/misc/machinery/screens/telescreenbrokespark
 	icon_state = "telescreenbspark"
 
+/obj/structure/prop/hybrisa/misc/machinery/screens/wood_clock
+	name = "clock"
+	icon_state = "wood_clock"
+
+/obj/structure/prop/hybrisa/misc/machinery/screens/gold_clock
+	name = "clock"
+	icon_state = "gold_clock"
+
 // Multi-Monitor
 
 //Green
@@ -1751,10 +1816,22 @@
 /obj/structure/prop/hybrisa/misc/fake/heavydutywire/heavy5
 	icon_state = "1-2-4-8"
 
+// Lattice & 'Effect' Lattice
+
 /obj/structure/prop/hybrisa/misc/fake/lattice
 	name = "structural lattice"
 	layer = TURF_LAYER
+
 /obj/structure/prop/hybrisa/misc/fake/lattice/full
+	icon_state = "latticefull"
+
+/obj/effect/hybrisa/decal/hybrisa/lattice
+	name = "structural lattice"
+	icon = 'icons/obj/structures/props/hybrisarandomprops.dmi'
+	icon_state = "latticefull"
+	layer = TURF_LAYER
+
+/obj/effect/hybrisa/decal/hybrisa/lattice/full
 	icon_state = "latticefull"
 
 // Cargo Containers extended
@@ -1899,7 +1976,7 @@
 	icon_state = "platform"
 	unslashable = TRUE
 	unacidable = TRUE
-	indestructible = TRUE
+	explo_proof = TRUE
 
 /obj/structure/prop/hybrisa/fakeplatforms/platform1
 	icon_state = "engineer_platform"
@@ -2072,6 +2149,11 @@
 	icon = 'icons/obj/structures/props/hybrisarandomprops.dmi'
 	icon_state = "biggreenmeter1"
 
+/obj/structure/prop/hybrisa/misc/elevator_button
+	name = "broken elevator button"
+	icon = 'icons/obj/structures/props/hybrisarandomprops.dmi'
+	icon_state = "broken_elevator_button"
+
 // MISC
 
 /obj/structure/prop/hybrisa/misc/stoneplanterseats
@@ -2104,7 +2186,7 @@
 	anchored = TRUE
 	unslashable = TRUE
 	unacidable = TRUE
-	indestructible = TRUE
+	explo_proof = TRUE
 	layer = ABOVE_MOB_LAYER
 
 /obj/structure/prop/hybrisa/misc/detonator
@@ -2115,7 +2197,7 @@
 	anchored = TRUE
 	unslashable = TRUE
 	unacidable = TRUE
-	indestructible = TRUE
+	explo_proof = TRUE
 	projectile_coverage = 20
 	throwpass = TRUE
 	var/id = 1
@@ -2204,7 +2286,7 @@
 	icon_state = "pole"
 	unslashable = TRUE
 	unacidable = TRUE
-	indestructible = TRUE
+	explo_proof = TRUE
 	density = TRUE
 	anchored = TRUE
 	projectile_coverage = 20
@@ -2305,7 +2387,7 @@
 
 // Signs
 
-/obj/structure/prop/hybrisa/signs
+/obj/structure/roof/hybrisa/signs
 	name = "neon sign"
 	icon = 'icons/obj/structures/props/hybrisa64x64_signs.dmi'
 	icon_state = "jacksopen_on"
@@ -2314,22 +2396,22 @@
 	layer = BILLBOARD_LAYER
 	health = 250
 
-/obj/structure/prop/hybrisa/signs/bullet_act(obj/projectile/P)
+/obj/structure/roof/hybrisa/signs/bullet_act(obj/projectile/P)
 	health -= P.damage
 	playsound(src, 'sound/effects/metalping.ogg', 35, 1)
 	..()
 	healthcheck()
 	return TRUE
 
-/obj/structure/prop/hybrisa/signs/proc/explode()
+/obj/structure/roof/hybrisa/signs/proc/explode()
 	visible_message(SPAN_DANGER("[src] breaks apart!"), max_distance = 1)
 	deconstruct(FALSE)
 
-/obj/structure/prop/hybrisa/signs/proc/healthcheck()
+/obj/structure/roof/hybrisa/signs/proc/healthcheck()
 	if(health <= 0)
 		explode()
 
-/obj/structure/prop/hybrisa/signs/ex_act(severity)
+/obj/structure/roof/hybrisa/signs/ex_act(severity)
 	switch(severity)
 		if(EXPLOSION_THRESHOLD_LOW to EXPLOSION_THRESHOLD_MEDIUM)
 			if(prob(50))
@@ -2337,7 +2419,7 @@
 		if(EXPLOSION_THRESHOLD_MEDIUM to INFINITY)
 			deconstruct(FALSE)
 
-/obj/structure/prop/hybrisa/signs/attack_alien(mob/living/carbon/xenomorph/current_xenomorph)
+/obj/structure/roof/hybrisa/signs/attack_alien(mob/living/carbon/xenomorph/current_xenomorph)
 	if(unslashable)
 		return XENO_NO_DELAY_ACTION
 	current_xenomorph.animation_attack_on(src)
@@ -2347,41 +2429,101 @@
 	update_health(rand(current_xenomorph.melee_damage_lower, current_xenomorph.melee_damage_upper))
 	return XENO_ATTACK_ACTION
 
-/obj/structure/prop/hybrisa/signs/casniosign
+/obj/structure/roof/hybrisa/signs/casniosign
 	name = "casino sign"
 	icon_state = "nightgoldcasinoopen_on"
 
-/obj/structure/prop/hybrisa/signs/jackssign
+/obj/structure/roof/hybrisa/signs/jackssign
 	name = "jack's surplus sign"
 	icon_state = "jacksopen_on"
 
-/obj/structure/prop/hybrisa/signs/opensign
+/obj/structure/roof/hybrisa/signs/opensign
 	name = "open sign"
 	icon_state = "open_on"
 
-/obj/structure/prop/hybrisa/signs/opensign2
+/obj/structure/roof/hybrisa/signs/opensign2
 	name = "open sign"
 	icon_state = "open_on2"
 
-/obj/structure/prop/hybrisa/signs/pizzasign
+/obj/structure/roof/hybrisa/signs/pizzasign
 	name = "pizza sign"
 	icon_state = "pizzaneon_on"
 
-/obj/structure/prop/hybrisa/signs/weymartsign
+/obj/structure/roof/hybrisa/signs/weymartsign
 	name = "weymart sign"
 	icon_state = "weymartsign2"
 
-/obj/structure/prop/hybrisa/signs/mechanicsign
+/obj/structure/roof/hybrisa/signs/mechanicsign
 	name = "mechanic sign"
 	icon_state = "mechanicopen_on2"
 
-/obj/structure/prop/hybrisa/signs/cuppajoessign
+/obj/structure/roof/hybrisa/signs/cuppajoessign
 	name = "cuppa joe's sign"
 	icon_state = "cuppajoes"
 
-/obj/structure/prop/hybrisa/signs/barsign
+/obj/structure/roof/hybrisa/signs/barsign
 	name = "bar sign"
 	icon_state = "barsign_on"
+
+/obj/structure/roof/hybrisa/signs/miscsign
+	name = "sign"
+	icon_state = "misc_on"
+
+/obj/structure/roof/hybrisa/signs/miscvertsign
+	name = "sign"
+	icon_state = "miscvert_on"
+
+/obj/structure/roof/hybrisa/signs/miscvert2sign
+	name = "sign"
+	icon_state = "miscvert2_on"
+
+/obj/structure/roof/hybrisa/signs/miscvert3sign
+	name = "sign"
+	icon_state = "miscvert3_on"
+
+/obj/structure/roof/hybrisa/signs/miscvert4sign
+	name = "sign"
+	icon_state = "miscvert4_on"
+
+/obj/structure/roof/hybrisa/signs/miscvert5sign
+	name = "sign"
+	icon_state = "miscvert5_on"
+
+/obj/structure/roof/hybrisa/signs/miscvert6sign
+	name = "sign"
+	icon_state = "miscvert6_on"
+
+/obj/structure/roof/hybrisa/signs/miscvert7sign
+	name = "sign"
+	icon_state = "miscvert7_on"
+
+/obj/structure/roof/hybrisa/signs/cafesign
+	name = "cafe sign"
+	icon_state = "cafe_on"
+
+/obj/structure/roof/hybrisa/signs/cafealtsign
+	name = "cafe sign"
+	icon_state = "cafealt_on"
+
+/obj/structure/roof/hybrisa/signs/coffeesign
+	name = "coffee sign"
+	icon_state = "coffee_on"
+
+/obj/structure/roof/hybrisa/signs/arcadesign
+	name = "arcade sign"
+	icon_state = "arcade_on"
+
+/obj/structure/roof/hybrisa/signs/hotelsign
+	name = "hotel sign"
+	icon_state = "hotel_on"
+
+/obj/structure/roof/hybrisa/signs/casinolights
+	name = "neon sign"
+	icon_state = "casinolights_on"
+
+/obj/structure/roof/hybrisa/signs/pharmacy_sign
+	name = "pharmacy sign"
+	icon_state = "pharmacy_on"
 
 // Small Sign
 

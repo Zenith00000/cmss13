@@ -139,6 +139,12 @@
 	html_link = "images/9/94/New_Varadero.png"
 	color = "red"
 
+/obj/item/map/isaacs_lament_map
+	name = "\improper Isaac's Lament map"
+	desc = "An old map provided by Weyland-Yutani for the colony of Isaac's Lament on LV-873"
+	html_link = "images/9/94/New_Varadero.png"
+	color = "grey"
+
 GLOBAL_LIST_INIT_TYPED(map_type_list, /obj/item/map, setup_all_maps())
 
 /proc/setup_all_maps()

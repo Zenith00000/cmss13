@@ -201,6 +201,7 @@
 /obj/structure/mineral_door/wood
 	mineralType = "wood"
 	hardness = 1
+	icon_state = "wood"
 
 /obj/structure/mineral_door/wood/Open()
 	isSwitchingStates = 1
