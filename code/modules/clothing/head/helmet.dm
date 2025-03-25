@@ -1214,10 +1214,10 @@ GLOBAL_LIST_INIT(allowed_helmet_items, list(
 	item_icons = list(
 		WEAR_HEAD = 'icons/mob/humans/onmob/clothing/head/hats_by_faction/WY.dmi'
 	)
-	icon_state = "helmet"
-	item_state = "helmet"
+	icon_state = "sec_helmet"
+	item_state = "sec_helmet"
 
-/obj/item/clothing/head/helmet/marine/veteran/pmc/corporate/med
+/obj/item/clothing/head/helmet/marine/veteran/pmc/corporate/medic
 	desc = "A basic skull-helm worn by corporate security assets. This variant lacks a visor, granting the wearer a better view of any potential patients."
 	icon_state = "med_helmet"
 	item_state = "med_helmet"
@@ -1231,13 +1231,18 @@ GLOBAL_LIST_INIT(allowed_helmet_items, list(
 
 /obj/item/clothing/head/helmet/marine/veteran/pmc/corporate/lead
 	desc = "A basic skull-helm worn by corporate security assets. This variant is worn by low-level guards that have too much brainmatter to fit into the old one. Or so they say."
-	icon_state = "lead_helmet"
-	item_state = "lead_helmet"
+	icon_state = "sec_lead_helmet"
+	item_state = "sec_lead_helmet"
 
 /obj/item/clothing/head/helmet/marine/veteran/pmc/corporate/kutjevo
-	desc = "A basic skull-helm worn by corporate security assets. This variant is worn comes with a wider brim to protect the user from the harsh climate of the desert."
-	icon_state = "kutjevo_helmet"
-	item_state = "kutjevo_helmet"
+	desc = "A basic skull-helm worn by corporate security assets. This variant comes with a wider brim to protect the user from the harsh climate of the desert."
+	icon_state = "sec_helmet_kutjevo"
+	item_state = "sec_helmet_kutjevo"
+
+/obj/item/clothing/head/helmet/marine/veteran/pmc/corporate/kutjevo/medic
+	desc = "A basic skull-helm worn by corporate security assets. This variant comes with a wider brim to protect the user from the harsh climate of the desert and has a medical cross across the front."
+	icon_state = "sec_medic_helmet_kutjevo"
+	item_state = "sec_medic_helmet_kutjevo"
 
 //FIORINA / UA RIOT CONTROL HELMET//
 
@@ -1397,8 +1402,13 @@ GLOBAL_LIST_INIT(allowed_helmet_items, list(
 	armor_energy = CLOTHING_ARMOR_MEDIUM
 	armor_bomb = CLOTHING_ARMOR_HIGH
 	armor_bio = CLOTHING_ARMOR_MEDIUM
-	armor_internaldamage = CLOTHING_ARMOR_HIGHPLUS
+	armor_internaldamage = CLOTHING_ARMOR_HIGH
 	flags_inv_hide = HIDEEARS|HIDEALLHAIR
+
+/obj/item/clothing/head/uppcap/peaked/police
+	name = "\improper UL3 PaP peaked cap"
+	desc = "Standard issue peaked cap of the People's Armed Police."
+	icon_state = "upp_peaked_police"
 
 /obj/item/clothing/head/uppcap
 	name = "\improper UL2 UPP cap"
@@ -1423,10 +1433,22 @@ GLOBAL_LIST_INIT(allowed_helmet_items, list(
 	flags_inventory = BLOCKSHARPOBJ
 	flags_inv_hide = HIDEEARS
 
+/obj/item/clothing/head/helmet/marine/veteran/UPP/firefighter
+	name = "T-20 Firefighter Helmet"
+	desc = "A reinforced, heat-resistant helmet issued to UPP emergency responders. Its durable composite shell provides protection against falling debris and extreme heat, while the attached fire-resistant shroud shields the wearer’s neck and shoulders. A red star is emblazoned on the front, marking its service within the Union."
+	icon_state = "firefighter"
+	flags_heat_protection = BODY_FLAG_HEAD
+	max_heat_protection_temperature = FIRE_HELMET_MAX_HEAT_PROT
+
 /obj/item/clothing/head/uppcap/civi
 	name = "\improper UL2 UPP cap"
 	desc = "UPP civilian headgear. It's of poor quality, and isn't expected to last all that long, however for as long as it's whole, it appears quite stylish."
 	icon_state = "upp_cap_civi"
+
+/obj/item/clothing/head/uppcap/civi/plant_worker
+	name = "white worker cap"
+	desc = "A simple white fabric cap, commonly worn by various UPP workers to keep hair contained and maintain cleanliness. Lightweight and practical, but not very durable."
+	icon_state = "plant_work_cap"
 
 /obj/item/clothing/head/uppcap/beret
 	name = "\improper UL3 UPP beret"

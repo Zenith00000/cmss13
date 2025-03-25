@@ -538,6 +538,16 @@
 	},
 /turf/closed/wall/hybrisa/colony/office,
 /area/lv759/indoors/weyyu_office/pressroom)
+"abA" = (
+/obj/structure/machinery/conveyor{
+	dir = 8;
+	id = "cargo_container"
+	},
+/obj/item/ammo_box/magazine/misc/mre/wy{
+	pixel_y = 5
+	},
+/turf/open/floor/almayer/plate,
+/area/lv759/indoors/landing_zone_2/kmcc_hub_cargo)
 "abB" = (
 /obj/structure/blocker/forcefield/vehicles,
 /obj/structure/blocker/forcefield/vehicles,
@@ -6555,6 +6565,13 @@
 /obj/structure/window/framed/hybrisa/marshalls/cell,
 /turf/open/floor/plating,
 /area/lv759/indoors/colonial_marshals/prisoners_cells)
+"ard" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "cargo"
+	},
+/obj/item/storage/box/mre/wy,
+/turf/open/floor/prison/floor_plate/southwest,
+/area/lv759/indoors/landing_zone_2/kmcc_hub_cargo)
 "ari" = (
 /obj/item/hybrisa/misc/trash_bag_full_prop{
 	pixel_x = 2;
@@ -10980,6 +10997,7 @@
 	pixel_x = 3;
 	pixel_y = 15
 	},
+/obj/item/ammo_box/magazine/misc/mre/emergency,
 /turf/open/floor/prison/floor_marked,
 /area/lv759/indoors/spaceport/starglider)
 "aZZ" = (
@@ -14850,12 +14868,15 @@
 /turf/open/auto_turf/hybrisa_auto_turf/layer0,
 /area/lv759/indoors/caves/central_caves)
 "bDM" = (
-/obj/structure/largecrate/supply/supplies/mre,
+/obj/structure/largecrate/supply/supplies/mre/wy,
 /obj/item/clothing/head/hardhat/dblue{
 	pixel_x = -7;
 	pixel_y = 10
 	},
-/obj/item/storage/box/MRE,
+/obj/item/storage/box/mre/wy{
+	pixel_y = 16;
+	pixel_x = 2
+	},
 /turf/open/floor/plating/platingdmg3,
 /area/lv759/indoors/electical_systems/substation3)
 "bDP" = (
@@ -42992,10 +43013,10 @@
 	layer = 2.7;
 	pixel_y = 2
 	},
-/obj/item/storage/box/wy_mre,
-/obj/item/storage/box/wy_mre,
-/obj/item/storage/box/wy_mre,
-/obj/item/storage/box/wy_mre,
+/obj/item/storage/box/mre/wy,
+/obj/item/storage/box/mre/wy,
+/obj/item/storage/box/mre/wy,
+/obj/item/storage/box/mre/wy,
 /turf/open/floor/almayer/cargo,
 /area/lv759/indoors/wy_research_complex/cargo)
 "fHF" = (
@@ -53437,8 +53458,8 @@
 /obj/structure/closet/crate/secure/weyland{
 	layer = 4
 	},
-/obj/item/storage/box/wy_mre,
-/obj/item/storage/box/wy_mre,
+/obj/item/storage/box/mre/wy,
+/obj/item/storage/box/mre/wy,
 /obj/effect/spawner/random/attachment,
 /turf/open/auto_turf/hybrisa_auto_turf/layer2,
 /area/lv759/outdoors/caveplateau)
@@ -57411,6 +57432,9 @@
 /obj/structure/prop/hybrisa/fakeplatforms/platform4/deco{
 	dir = 8
 	},
+/obj/effect/landmark/nightmare{
+	insert_tag = "clfadmin"
+	},
 /turf/open/hybrisa/street/sidewalkfull,
 /area/lv759/outdoors/colony_streets/north_west_street)
 "hRr" = (
@@ -60838,6 +60862,15 @@
 /area/lv759/oob)
 "irQ" = (
 /obj/effect/decal/hybrisa/warning/redandwhite_S,
+/obj/structure/closet/crate/freezer/cooler,
+/obj/item/mre_food_packet/clf,
+/obj/item/mre_food_packet/clf,
+/obj/item/mre_food_packet/clf,
+/obj/item/mre_food_packet/clf,
+/obj/item/mre_food_packet/clf,
+/obj/item/mre_food_packet/clf,
+/obj/item/mre_food_packet/clf,
+/obj/item/mre_food_packet/clf,
 /turf/open/floor/plating/platingdmg3,
 /area/lv759/indoors/jacks_surplus)
 "irS" = (
@@ -62761,7 +62794,7 @@
 /obj/structure/surface/table/reinforced/prison{
 	color = "#8e98a0"
 	},
-/obj/structure/machinery/faxmachine/corporate/highcom{
+/obj/structure/machinery/faxmachine/corporate{
 	pixel_y = 8
 	},
 /obj/item/tool/pen/blue{
@@ -62801,6 +62834,10 @@
 /obj/structure/largecrate/random/mini/small_case{
 	pixel_x = -6;
 	pixel_y = -5
+	},
+/obj/item/ammo_box/magazine/misc/mre/emergency{
+	pixel_x = 9;
+	pixel_y = -3
 	},
 /turf/open/floor/almayer/test_floor5,
 /area/lv759/indoors/spaceport/horizon_runner)
@@ -88603,7 +88640,7 @@
 /obj/effect/decal/warning_stripes{
 	icon_state = "N"
 	},
-/obj/item/weapon/gun/flamer{
+/obj/item/weapon/gun/flamer/survivor{
 	current_mag = null;
 	layer = 3.1;
 	pixel_y = 6
@@ -99503,7 +99540,7 @@
 /obj/effect/decal/warning_stripes{
 	icon_state = "N"
 	},
-/obj/item/ammo_magazine/flamer_tank/empty,
+/obj/item/ammo_magazine/flamer_tank/survivor/empty,
 /obj/structure/surface/rack{
 	color = "#98a3ab"
 	},
@@ -110229,10 +110266,13 @@
 	pixel_x = -3;
 	pixel_y = 4
 	},
-/obj/item/explosive/plastic/breaching_charge/rubber,
 /obj/structure/surface/table/reinforced/prison{
 	color = "#98a3ab"
 	},
+/obj/item/storage/box/mre/twe{
+	pixel_y = 18
+	},
+/obj/item/explosive/plastic/breaching_charge/rubber,
 /turf/open/floor/prison/red/west,
 /area/lv759/indoors/colonial_marshals/armory)
 "pFS" = (
@@ -151531,7 +151571,7 @@
 	pixel_x = 3;
 	pixel_y = 2
 	},
-/obj/item/storage/box/wy_mre{
+/obj/item/storage/box/mre/wy{
 	pixel_y = 9;
 	pixel_x = -16
 	},
@@ -155106,10 +155146,10 @@
 /obj/structure/surface/table/reinforced/prison{
 	color = "#8e98a0"
 	},
-/obj/structure/machinery/faxmachine/corporate/highcom{
+/obj/structure/machinery/faxmachine/corporate{
 	layer = 4
 	},
-/obj/structure/machinery/faxmachine/uscm/highcom{
+/obj/structure/machinery/faxmachine/uscm{
 	pixel_y = 10
 	},
 /turf/open/floor/almayer/blackfull/west,
@@ -218108,7 +218148,7 @@ acm
 uxu
 tiF
 aza
-iYw
+abA
 anU
 keq
 gAD
@@ -220121,7 +220161,7 @@ wBw
 sjK
 qYM
 bxh
-eck
+ard
 lOk
 uBK
 iPS

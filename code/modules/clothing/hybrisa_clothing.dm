@@ -11,14 +11,14 @@
 /obj/item/clothing/under/marine/veteran/pmc/corporate/hybrisa
 	name = "\improper WY corporate security uniform"
 	desc = "An armored uniform worn by Weyland-Yutani corporate security members. This variant is commonly worn by what are known as 'goons'."
-	icon_state = "hybrisa_uniform"
-	worn_state = "hybrisa_uniform"
+	icon_state = "sec_hybrisa_uniform"
+	worn_state = "sec_hybrisa_uniform"
 	flags_jumpsuit = UNIFORM_SLEEVE_ROLLABLE
 
 /obj/item/clothing/under/marine/veteran/pmc/corporate/hybrisa/lead
 	desc = "An armored uniform worn by Weyland-Yutani corporate security members. This variant is commonly worn by the lead of the 'goonsquad', as they are colloquially known."
-	icon_state = "lead_hybrisa_uniform"
-	worn_state = "lead_hybrisa_uniform"
+	icon_state = "sec_lead_hybrisa_uniform"
+	worn_state = "sec_lead_hybrisa_uniform"
 
 // CMB Police Officer
 
@@ -289,19 +289,24 @@
 /obj/item/clothing/head/helmet/marine/veteran/pmc/corporate/hybrisa
 	name = "\improper WY corporate security helmet"
 	desc = "A basic skull-helm with a orange saftey vison fitted. Worn by corporate security assets, graded to protect your head from an unruly scientist armed with a crowbar."
-	icon_state = "helmet_black"
-	item_state = "helmet_black"
+	icon_state = "sec_helmet_hybrisa"
+	item_state = "sec_helmet_hybrisa"
 
 /obj/item/clothing/head/helmet/marine/veteran/pmc/corporate/hybrisa/lead
 	desc = "A basic skull-helm with a orange saftey vison fitted. Worn by corporate security assets. This variant is worn by low-level guards that have too much brainmatter to fit into the old one. Or so they say."
-	icon_state = "lead_helmet_black"
-	item_state = "lead_helmet_black"
+	icon_state = "sec_lead_helmet_hybrisa"
+	item_state = "sec_lead_helmet_hybrisa"
 
 /obj/item/clothing/head/helmet/marine/veteran/pmc/corporate/hybrisa/brown
 	name = "\improper WY corporate security helmet"
 	desc = "A basic skull-helm with a orange saftey vison fitted. Worn by corporate security assets, graded to protect your head from an unruly scientist armed with a crowbar."
-	icon_state = "helmet_brown"
-	item_state = "helmet_brown"
+	icon_state = "sec_brown_helmet_hybrisa"
+	item_state = "sec_brown_helmet_hybrisa"
+
+/obj/item/clothing/head/helmet/marine/veteran/pmc/corporate/hybrisa/medic
+	desc = "A basic skull-helm with a orange saftey vison fitted. Worn by corporate security assets, graded to protect your head from an unruly scientist armed with a crowbar. A medical cross is emblazoned across the front."
+	icon_state = "sec_medic_helmet_hybrisa"
+	item_state = "sec_medic_helmet_hybrisa"
 
 // CMB Police Hats
 
@@ -641,6 +646,15 @@
 
 	return COMPONENT_NO_IGNITE
 
+// UPP firefighter
+
+/obj/item/clothing/suit/storage/marine/light/vest/fire_light/upp
+	name = "T-20 Fire Response Coat"
+	desc = "A rugged, no-frills fire-resistant overcoat issued to UPP industrial and emergency crews. Based on the PyroTex LT design but using cheaper, domestically produced materials, it offers basic protection against heat and debris at the cost of weight and comfort."
+	icon_state = "upp_firefighter_alt"
+	item_state = "upp_firefighter_alt"
+	uniform_restricted = FALSE
+
 // Kelland Mining
 
 /obj/item/clothing/suit/storage/marine/light/vest/hybrisa_kelland
@@ -851,7 +865,7 @@
 
 /obj/item/clothing/suit/armor/vest/hybrisa/civilian_vest
 	name = "armored vest"
-	desc = "An civilian, unmarked armored vest that protects against some damage."
+	desc = "An general-use, unmarked armored vest that protects against some damage."
 	icon_state = "generic_ballistic_armor"
 	item_state = "generic_ballistic_armor"
 	uniform_restricted = null

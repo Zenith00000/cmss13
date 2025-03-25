@@ -280,7 +280,7 @@
 
 /obj/item/clothing/suit/storage/snow_suit/survivor/parka
 	name = "Parent Parka"
-	desc = "A winter coat made to withstand the frigged cold weather of the arctic deserts. WY branded Parka"
+	desc = "A winter coat made to withstand the frigged cold weather of the arctic deserts. W-Y branded Parka"
 
 /obj/item/clothing/suit/storage/snow_suit/survivor/parka/red
 	name = "Security Parka"
@@ -366,3 +366,15 @@
 		/obj/item/device/motiondetector,
 		/obj/item/device/walkman,
 	)
+
+/obj/item/clothing/suit/storage/labcoat/brown
+	icon_state = "labcoat_brown"
+	item_state = "labcoat_brown"
+
+/obj/item/clothing/suit/storage/labcoat/short
+	icon_state = "labcoat_short"
+	item_state = "labcoat_short"
+
+/obj/item/clothing/suit/storage/labcoat/long
+	icon_state = "labcoat_long"
+	item_state = "labcoat_long"

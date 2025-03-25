@@ -91,7 +91,7 @@
 	flags_heat_protection = BODY_FLAG_CHEST
 	item_state_slots = list(WEAR_JACKET = "armor")
 
-/obj/item/clothing/suit/storage/marine/veteran/pmc/light/corporate/med
+/obj/item/clothing/suit/storage/marine/veteran/pmc/light/corporate/medic
 	desc = "A basic vest with a Weyland-Yutani badge on the right breast. This variant has a red badge, denoting the medical purpose of the wearer. At least in theory."
 	icon_state = "med_armor"
 	item_state = "med_armor"
@@ -141,6 +141,14 @@
 	flags_atom |= NO_NAME_OVERRIDE
 	flags_marine_armor |= SYNTH_ALLOWED
 	return ..()
+
+/obj/item/clothing/suit/storage/marine/veteran/pmc/light/synth/corporate
+	name = "\improper M1 pattern corporate synthetic armor"
+	desc = "A basic synthetic personnel vest with a Weyland-Yutani badge on the right breast. This is a rare sight, as low-level security units often aren't afforded the luxury of an accompanying synthetic. It has all of the armor inserts removed."
+	icon_state = "armor"
+	item_state = "armor"
+	storage_slots = 2
+	item_state_slots = list(WEAR_JACKET = "armor")
 
 /obj/item/clothing/suit/storage/marine/smartgunner/veteran/pmc
 	name = "\improper PMC gunner armor"
@@ -432,35 +440,124 @@
 	armor_internaldamage = CLOTHING_ARMOR_HIGH
 	storage_slots = 2
 
+// UPP Army
+
 /obj/item/clothing/suit/storage/marine/faction/UPP/army
 
 	name = "\improper 6B80 Personal Body Armour"
 	desc = "An older UPP Armour that's since been replaced by the UPP Army Standard 6B90 Body Armour, still used by certain UPP Army units that the UPP doesn't expect to see much combat."
 	storage_slots = 3
 	icon_state = "upp_armor_army_brown"
+
+	armor_melee = CLOTHING_ARMOR_MEDIUMLOW // Goon stats
+	armor_bullet = CLOTHING_ARMOR_MEDIUM
+	armor_energy = CLOTHING_ARMOR_MEDIUMLOW
+	armor_bomb = CLOTHING_ARMOR_MEDIUMLOW
+	armor_rad = CLOTHING_ARMOR_MEDIUM
+	armor_internaldamage = CLOTHING_ARMOR_MEDIUM
+
+	flags_armor_protection = (BODY_FLAG_CHEST)
+	flags_cold_protection = (BODY_FLAG_CHEST)
+	flags_heat_protection = (BODY_FLAG_CHEST)
+
 	slowdown = SLOWDOWN_ARMOR_LIGHT
-	armor_melee = CLOTHING_ARMOR_HIGH
-	armor_energy = CLOTHING_ARMOR_MEDIUM
-	armor_bio = CLOTHING_ARMOR_MEDIUMLOW
-	armor_rad = CLOTHING_ARMOR_MEDIUMLOW
-	armor_internaldamage = CLOTHING_ARMOR_HIGH
+
+/obj/item/clothing/suit/storage/marine/faction/UPP/army/simple
+	name = "6B70 Personal Body Armour"
+	desc = "An older UPP Armour that's since been replaced by the UPP Army Standard 6B90 Body Armour, still used by certain UPP Army units that the UPP doesn't expect to see much combat."
+	icon_state = "upp_generic_ballistic_armor"
+
+/obj/item/clothing/suit/storage/marine/faction/UPP/army/alt
+	name = "6B75 Personal Body Armour"
+	desc = "An older UPP Armour that's since been replaced by the UPP Army Standard 6B90 Body Armour, still used by certain UPP Army units that the UPP doesn't expect to see much combat."
+	icon_state = "upp_ballistic_armor"
+
+// People's Armed Police
+
+/obj/item/clothing/suit/storage/CMB/pap
+	name = "\improper PaP uniform jacket"
+	desc = "A People's Armed Police service jacket featuring small dispersed para-aramid inserts providing the barest of defensive functionality, and a Personal Light Unit rig."
+	icon_state = "upp_coat_pap"
+	uniform_restricted = FALSE
+	icon = 'icons/obj/items/clothing/suits/suits_by_faction/UPP.dmi'
+	item_icons = list(
+		WEAR_JACKET = 'icons/mob/humans/onmob/clothing/suits/suits_by_faction/UPP.dmi'
+	)
 
 // UPP SOF
 
 /obj/item/clothing/suit/storage/marine/faction/UPP/SOF_armor
 	name = "\improper CCC5-L Tactical Vest"
-	desc = "A lightweight UPP-issued armor vest designed for special operations forces. It features polymer-ceramic composite plating for improved protection while allowing greater mobility. Equipped with modular pouches for ammunition and gear, it ensures rapid access to essential supplies."
+	desc = "A lightweight UPP-issued armor vest designed for space operations forces. It features polymer-ceramic composite plating for improved protection while allowing greater mobility. Equipped with modular pouches for ammunition and gear, it ensures rapid access to essential supplies."
 	icon_state = "sof_vest"
 	icon = 'icons/obj/items/clothing/suits/suits_by_faction/UPP.dmi'
 	item_icons = list(
 		WEAR_JACKET = 'icons/mob/humans/onmob/clothing/suits/suits_by_faction/UPP.dmi'
 	)
-	armor_bullet = CLOTHING_ARMOR_HIGH
-	armor_energy = CLOTHING_ARMOR_MEDIUM
-	armor_bio = CLOTHING_ARMOR_MEDIUMLOW
-	armor_rad = CLOTHING_ARMOR_MEDIUMLOW
-	armor_internaldamage = CLOTHING_ARMOR_HIGH
+	armor_melee = CLOTHING_ARMOR_MEDIUMLOW // Goon stats & covers arms
+	armor_bullet = CLOTHING_ARMOR_MEDIUM
+	armor_energy = CLOTHING_ARMOR_MEDIUMLOW
+	armor_bomb = CLOTHING_ARMOR_MEDIUMLOW
+	armor_rad = CLOTHING_ARMOR_MEDIUM
+	armor_internaldamage = CLOTHING_ARMOR_MEDIUM
+
+	flags_armor_protection = (BODY_FLAG_CHEST|BODY_FLAG_ARMS)
+	flags_cold_protection = (BODY_FLAG_CHEST|BODY_FLAG_ARMS)
+	flags_heat_protection = (BODY_FLAG_CHEST|BODY_FLAG_ARMS)
+
 	storage_slots = 4
+	slowdown = SLOWDOWN_ARMOR_LIGHT
+
+/obj/item/clothing/suit/storage/marine/faction/UPP/SOF_armor/heavy
+	name = "\improper CCC5-L Heavy Tactical Vest"
+	desc = "A heavily reinforced UPP-issued tactical vest designed for space operations forces operating in high-risk environments. The CCC5-L Heavy-Plated Tactical Vest features additional polymer-ceramic composite plating across the chest and torso, providing superior protection against ballistic and explosive threats. Despite its bulk, the vest maintains a balance between protection and mobility, with modular pouches for quick access to essential gear."
+	icon_state = "sof_vest_plate_heavy"
+
+	armor_melee = CLOTHING_ARMOR_MEDIUM // Slightly better then Goon armor & covers arms and groin
+	armor_bullet = CLOTHING_ARMOR_MEDIUMHIGH
+	armor_energy = CLOTHING_ARMOR_MEDIUMLOW
+	armor_bomb = CLOTHING_ARMOR_MEDIUMLOW
+	armor_rad = CLOTHING_ARMOR_MEDIUM
+	armor_internaldamage = CLOTHING_ARMOR_MEDIUMHIGH
+	slowdown = SLOWDOWN_ARMOR_LIGHT
+	flags_armor_protection = (BODY_FLAG_CHEST|BODY_FLAG_ARMS|BODY_FLAG_GROIN)
+
+/obj/item/clothing/suit/storage/marine/faction/UPP/SOF_armor/medium
+	name = "\improper CCC5-L Plated Tactical Vest"
+	desc = "A lightweight UPP-issued armor vest designed for space operations forces. It features polymer-ceramic composite plating for improved protection while allowing greater mobility. Equipped with modular pouches for ammunition and gear, it ensures rapid access to essential supplies."
+	icon_state = "sof_vest_plate"
+
+	armor_melee = CLOTHING_ARMOR_MEDIUMLOW // Very slightly better then Goon armor & covers arms
+	armor_bullet = CLOTHING_ARMOR_MEDIUMHIGH
+	armor_energy = CLOTHING_ARMOR_MEDIUMLOW
+	armor_bomb = CLOTHING_ARMOR_MEDIUMLOW
+	armor_rad = CLOTHING_ARMOR_MEDIUM
+	armor_internaldamage = CLOTHING_ARMOR_MEDIUMHIGH
+	slowdown = SLOWDOWN_ARMOR_LIGHT
+
+/obj/item/clothing/suit/storage/marine/faction/UPP/SOF_armor/medium/alt
+	icon_state = "sof_vest_alt"
+
+/obj/item/clothing/suit/storage/marine/faction/UPP/SOF_armor/synth
+	name = "\improper CCC5-L Synthetic Tactical Vest"
+	desc = "A lightweight UPP-issued armor vest designed for space operations forces. It features polymer-ceramic composite plating for improved protection while allowing greater mobility. Equipped with modular pouches for ammunition and gear, it ensures rapid access to essential supplies."
+	time_to_unequip = 0.5 SECONDS
+	time_to_equip = 1 SECONDS
+	armor_melee = CLOTHING_ARMOR_NONE
+	armor_bullet = CLOTHING_ARMOR_NONE
+	armor_laser = CLOTHING_ARMOR_NONE
+	armor_energy = CLOTHING_ARMOR_NONE
+	armor_bomb = CLOTHING_ARMOR_NONE
+	armor_bio = CLOTHING_ARMOR_NONE
+	armor_rad = CLOTHING_ARMOR_NONE
+	armor_internaldamage = CLOTHING_ARMOR_NONE
+	storage_slots = 4
+	slowdown = SLOWDOWN_ARMOR_SUPER_LIGHT
+
+/obj/item/clothing/suit/storage/marine/faction/UPP/SOF_armor/synth/Initialize()
+	flags_atom |= NO_NAME_OVERRIDE
+	flags_marine_armor |= SYNTH_ALLOWED
+	return ..()
 
 //===========================//FREELANCER\\================================\\
 //=====================================================================\\

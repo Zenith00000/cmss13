@@ -85,6 +85,7 @@
 		/obj/item/attachable/attached_gun/flamer/advanced,
 		/obj/item/attachable/attached_gun/shotgun,
 		/obj/item/attachable/attached_gun/extinguisher,
+		/obj/item/attachable/alt_iff_scope,
 		/obj/item/attachable/scope,
 		/obj/item/attachable/scope/mini,
 	)
@@ -1777,7 +1778,7 @@
 	update_attachable(integrated.slot)
 
 /obj/item/weapon/gun/rifle/ak4047/set_gun_attachment_offsets()
-	attachable_offset = list("muzzle_x" = 33, "muzzle_y" = 17,"rail_x" = 10, "rail_y" = 23, "under_x" = 20, "under_y" = 13, "stock_x" = 11, "stock_y" = 13)
+	attachable_offset = list("muzzle_x" = 38, "muzzle_y" = 18,"rail_x" = 20, "rail_y" = 23, "under_x" = 24, "under_y" = 13, "stock_x" = 11, "stock_y" = 13, "special_x" = 33, "special_y" = 17)
 
 /obj/item/weapon/gun/rifle/ak4047/set_gun_config_values()
 	..()
@@ -1785,12 +1786,16 @@
 	set_burst_amount(BURST_AMOUNT_TIER_3)
 	set_burst_delay(FIRE_DELAY_TIER_11)
 	accuracy_mult = BASE_ACCURACY_MULT + HIT_ACCURACY_MULT_TIER_4 + 2*HIT_ACCURACY_MULT_TIER_1
-	accuracy_mult_unwielded = BASE_ACCURACY_MULT - HIT_ACCURACY_MULT_TIER_6
+	accuracy_mult_unwielded = BASE_ACCURACY_MULT - HIT_ACCURACY_MULT_TIER_7
 	scatter = SCATTER_AMOUNT_TIER_8
 	burst_scatter_mult = SCATTER_AMOUNT_TIER_10
 	scatter_unwielded = SCATTER_AMOUNT_TIER_2
-	damage_mult = BASE_BULLET_DAMAGE_MULT + BULLET_DAMAGE_MULT_TIER_3
+	damage_mult = BASE_BULLET_DAMAGE_MULT + BULLET_DAMAGE_MULT_TIER_2
 	recoil_unwielded = RECOIL_AMOUNT_TIER_2
+
+/obj/item/weapon/gun/rifle/ak4047/tactical
+	current_mag = /obj/item/ammo_magazine/rifle/ak4047
+	starting_attachment_types = list(/obj/item/attachable/reflex, /obj/item/attachable/suppressor, /obj/item/attachable/verticalgrip, /obj/item/attachable/stock/rifle/collapsible/ak4047)
 
 	//-------------------------------------------------------
 
@@ -1841,7 +1846,7 @@
 		/obj/item/attachable/lasersight,
 		/obj/item/attachable/scope,
 		/obj/item/attachable/scope/mini,
-		/obj/item/attachable/scope/mini_iff,
+		/obj/item/attachable/alt_iff_scope,
 		/obj/item/attachable/flashlight/grip,
 	)
 
@@ -1877,7 +1882,7 @@
 	current_mag = /obj/item/ammo_magazine/rifle/m4ra/rubber
 
 /obj/item/weapon/gun/rifle/m4ra/tactical
-	current_mag = /obj/item/ammo_magazine/rifle/m4ra/ext
+	current_mag = /obj/item/ammo_magazine/rifle/m4ra/extended
 	starting_attachment_types = list(/obj/item/attachable/magnetic_harness, /obj/item/attachable/suppressor, /obj/item/attachable/angledgrip)
 
 
@@ -1927,7 +1932,7 @@
 		/obj/item/attachable/lasersight,
 		/obj/item/attachable/scope,
 		/obj/item/attachable/scope/mini,
-		/obj/item/attachable/scope/mini_iff,
+		/obj/item/attachable/alt_iff_scope,
 		/obj/item/attachable/flashlight/grip,
 	)
 

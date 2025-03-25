@@ -206,7 +206,7 @@
 	icon_state = "pilot_flightsuit_alt"
 	worn_state = "pilot_flightsuit_alt"
 	icon = 'icons/obj/items/clothing/uniforms/uniforms_by_faction/UA.dmi'
-	flags_jumpsuit = UNIFORM_SLEEVE_ROLLABLE
+	flags_jumpsuit = UNIFORM_JACKET_REMOVABLE
 	flags_atom = NO_NAME_OVERRIDE|NO_GAMEMODE_SKIN
 	flags_cold_protection = ICE_PLANET_MIN_COLD_PROT
 	item_icons = list(
@@ -551,8 +551,8 @@
 /obj/item/clothing/under/marine/veteran/pmc/corporate
 	name = "\improper WY corporate security uniform"
 	desc = "An armored uniform worn by Weyland-Yutani corporate security members. This variant is commonly worn by what are known as 'goons'."
-	icon_state = "uniform"
-	worn_state = "uniform"
+	icon_state = "sec_uniform"
+	worn_state = "sec_uniform"
 	flags_jumpsuit = UNIFORM_SLEEVE_ROLLABLE
 
 /obj/item/clothing/under/marine/veteran/pmc/corporate/medic //TODO: make this an armband accessory instead of a jumpsuit
@@ -572,15 +572,21 @@
 /obj/item/clothing/under/marine/veteran/pmc/corporate/lead
 	name = "\improper WY corporate security leader uniform"
 	desc = "An armored uniform worn by Weyland-Yutani corporate security members. This variant is commonly worn by the lead of the 'goonsquad', as they are colloquially known."
-	icon_state = "lead_uniform"
-	item_state = "lead_uniform"
-	worn_state = "lead_uniform"
+	icon_state = "sec_lead_uniform"
+	item_state = "sec_lead_uniform"
+	worn_state = "sec_lead_uniform"
 
 /obj/item/clothing/under/marine/veteran/pmc/corporate/kutjevo
 	desc = "An armored uniform worn by Weyland-Yutani corporate security members. This variant is more breathable for use in hot, dry environments."
-	icon_state = "kutjevo_uniform"
-	item_state = "kutjevo_uniform"
-	worn_state = "kutjevo_uniform"
+	icon_state = "sec_kutjevo_uniform"
+	item_state = "sec_kutjevo_uniform"
+	worn_state = "sec_kutjevo_uniform"
+
+/obj/item/clothing/under/marine/veteran/pmc/corporate/kutjevo/lead
+	desc = "An armored uniform worn by Weyland-Yutani corporate security members. This variant is more breathable for use in hot, dry environments and has gold armbands denoting the team leader."
+	icon_state = "sec_lead_kutjevo_uniform"
+	item_state = "sec_lead_kutjevo_uniform"
+	worn_state = "sec_lead_kutjevo_uniform"
 
 //=========================//UPP\\================================\\
 
@@ -664,16 +670,23 @@
 	icon_state = "upp_uniform_civi4"
 	worn_state = "upp_uniform_civi4"
 
+/obj/item/clothing/under/marine/veteran/UPP/civi5
+	name = "\improper Jùtóu Combine mining overalls"
+	desc = "A durable, olive-green jumpsuit worn beneath a sleeveless, puffy orange work vest—standard issue for Jùtóu Combine laborers. The vest’s faded fabric is lined with reinforced padding, offering minimal protection against workplace hazards. A red star insignia is stamped on the back, marking its wearer as part of the Combine’s industrial workforce. Stiff, uncomfortable, and mass-produced, but better than nothing in the unforgiving conditions of deep-space labor."
+	icon_state = "miner_uniform"
+	worn_state = "miner_uniform"
+
 /obj/item/clothing/under/marine/veteran/UPP/army
 	name = "\improper UPP Army fatigues"
 	desc =  "A set of UPP fatigues, mass produced for the Armed Collective of the Union of Progressive Peoples. A rare sight, especially in 3WE zones. This particular set sports the Jungle pattern of the UPP Army's 202nd Infantry Regiment."
-	icon_state = "upp_army_green"
+	icon_state = "upp_army_green_uniform"
 	worn_state = "upp_army_green_uniform"
+	suit_restricted = FALSE
 
 /obj/item/clothing/under/marine/veteran/UPP/army/alt
 	name = "\improper UPP Army fatigues"
 	desc = "A set of UPP fatigues, mass produced for the Armed Collective of the Union of Progressive Peoples. A rare sight, especially in 3WE zones. This particular set sports the Standard UPP pattern of the UPP Army's 202nd Infantry Regiment."
-	icon_state = "upp_army_yellow"
+	icon_state = "upp_army_yellow_uniform"
 	worn_state = "upp_army_yellow_uniform"
 
 // UPP SOF
@@ -683,6 +696,14 @@
 	desc = "A temperature-regulating pressure suit forming the base layer of the CCC5-L system. It provides compression support, limited vacuum resistance, moisture-wicking properties, and NBC protection to sustain operators in hazardous conditions."
 	icon_state = "sof_uniform"
 	worn_state = "sof_uniform"
+
+/obj/item/clothing/under/marine/veteran/UPP/pap
+	name = "\improper PaP service uniform"
+	desc = "A pair of blue-grey slacks coupled with a blue shirt, featuring venlar armor inserts at critical areas to protect from blades and low caliber ballistics."
+	icon_state = "upp_uniform_pap"
+	worn_state = "upp_uniform_pap"
+	flags_jumpsuit = UNIFORM_SLEEVE_ROLLABLE|UNIFORM_JACKET_REMOVABLE
+	suit_restricted = FALSE
 
 //=========================//CMB\\================================\\
 
@@ -1198,6 +1219,24 @@
 	icon_state = "brown_utility"
 	worn_state = "brown_utility"
 	has_sensor = UNIFORM_HAS_SENSORS
+
+/obj/item/clothing/under/rank/utility/brown/upp
+	name = "Brown utility uniform"
+	desc = "A rugged utility jumpsuit worn by UPP workers and emergency crews. Constructed from heat-treated synthetic fibers and reinforced at key points, it provides basic protection against heat and physical hazards. Though practical, its heavy fabric and outdated design reflect the Union’s focus on durability over comfort."
+	icon_state = "brown_utility"
+	worn_state = "brown_utility"
+	has_sensor = UNIFORM_HAS_SENSORS
+	suit_restricted = FALSE
+	armor_energy = CLOTHING_ARMOR_LOW
+
+/obj/item/clothing/under/rank/utility/gray/upp
+	name = "\improper Gray utility uniform"
+	desc = "A rugged utility jumpsuit worn by UPP workers and emergency crews. Constructed from heat-treated synthetic fibers and reinforced at key points, it provides basic protection against heat and physical hazards. Though practical, its heavy fabric and outdated design reflect the Union’s focus on durability over comfort."
+	icon_state = "grey_utility"
+	worn_state = "grey_utility"
+	has_sensor = UNIFORM_HAS_SENSORS
+	suit_restricted = FALSE
+	armor_energy = CLOTHING_ARMOR_LOW
 
 /obj/item/clothing/under/rank/synthetic/councillor
 	name = "\improper USCM Pristine Support Uniform"
