@@ -1,5 +1,8 @@
 #define HOT_WATER_DAMAGE 1.5
 #define HOT_WATER_TEMP_EFFECT 5
+#define HOT_WATER_TARGET_TEMP T90C
+#define HOT_WATER_DAMAGE_TYPE BURN
+#define SOURCE_EFFECT /obj/effect/blocker/sorokyne_hot_water
 
 /obj/effect/blocker/sorokyne_hot_water
 	anchored = TRUE
@@ -25,43 +28,25 @@
 	if(!istype(M.loc, /turf))
 		return
 
-	cause_damage(M)
 	START_PROCESSING(SSobj, src)
 
 
 /obj/effect/blocker/sorokyne_hot_water/process()
 	var/mobs_present = 0
+	var/dam_amount = HOT_WATER_DAMAGE
+	var/dam_type = HOT_WATER_DAMAGE_TYPE
+	var/target_temp = HOT_WATER_TARGET_TEMP
+	var/temp_delta = HOT_WATER_TEMP_EFFECT
+	var/cause = SOURCE_EFFECT
 	for(var/mob/living/carbon/M in range(0, src))
 		mobs_present++
-		cause_damage(M)
+		if(!M.GetExactComponent(/datum/component/damage_over_time))
+			M.AddComponent(/datum/component/damage_over_time, dam_amount, dam_type, target_temp, temp_delta, cause)
 	if(mobs_present < 1)
 		STOP_PROCESSING(SSobj, src)
 
-
-/obj/effect/blocker/sorokyne_hot_water/proc/cause_damage(mob/living/M)
-	if(M.stat == DEAD)
-		return
-	if(isxeno(M))
-		return
-
-	var/dam_amount = HOT_WATER_DAMAGE
-	if(issynth(M) || isyautja(M))
-		dam_amount -= 0.5
-	if(M.body_position == STANDING_UP)
-		M.apply_damage(dam_amount,BURN,"l_leg")
-		M.apply_damage(dam_amount,BURN,"l_foot")
-		M.apply_damage(dam_amount,BURN,"r_leg")
-		M.apply_damage(dam_amount,BURN,"r_foot")
-	else
-		M.apply_damage(5*dam_amount,BURN)
-
-	if (ishuman(M))
-		if (M.bodytemperature > T90C)
-			M.bodytemperature -= HOT_WATER_TEMP_EFFECT
-		else
-			M.bodytemperature = T90C
-		if(!issynth(M))
-			to_chat(M, SPAN_DANGER("You feel your body start to shake as the scalding water sears your skin, heat overwhelming your senses..."))
-
 #undef HOT_WATER_DAMAGE
 #undef HOT_WATER_TEMP_EFFECT
+#undef HOT_WATER_TARGET_TEMP
+#undef HOT_WATER_DAMAGE_TYPE
+#undef SOURCE_EFFECT
