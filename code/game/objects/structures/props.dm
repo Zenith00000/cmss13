@@ -1604,3 +1604,39 @@
 	layer = TURF_LAYER
 	plane = FLOOR_PLANE
 	mouse_opacity = MOUSE_OPACITY_TRANSPARENT
+
+/// Large Reactor
+
+// Middle
+
+/obj/structure/prop/invuln/large_reactor
+	name = "\improper S-52 fusion reactor"
+	desc = "A Westingland S-52 Fusion Reactor."
+	icon = 'icons/obj/structures/machinery/large_reactor.dmi'
+	icon_state = "base"
+	explo_proof = TRUE
+	unslashable = TRUE
+	unacidable = TRUE
+	layer = OBJ_LAYER
+
+/obj/structure/prop/invuln/large_reactor/middle
+	icon_state = "middle"
+
+// Top
+
+/obj/structure/prop/invuln/large_reactor/top
+	name = "\improper S-52 fusion reactor"
+	desc = "A Westingland S-52 Fusion Reactor."
+	icon = 'icons/obj/structures/machinery/large_reactor_top.dmi'
+	icon_state = "large_reactor_top"
+	layer = ABOVE_OBJ_LAYER
+
+/obj/structure/prop/invuln/large_reactor/top/alt
+	icon_state = "large_reactor_top_alt"
+
+// Pipes
+
+/obj/structure/prop/invuln/large_reactor/pipes
+	icon = 'icons/obj/structures/machinery/pipes_above_ground.dmi'
+	icon_state = "pipe"
+	layer = LOWER_ITEM_LAYER

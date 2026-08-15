@@ -491,6 +491,14 @@
 	name = "\improper RDS-168 fusion reactor"
 	desc = "A RDS-168 Fusion Reactor."
 
+/// Large Reactor
+
+/obj/structure/machinery/power/power_generator/reactor/large
+	name = "\improper S-52 fusion reactor"
+	desc = "A Westingland S-52 Fusion Reactor."
+	icon = 'icons/obj/structures/machinery/large_reactor.dmi'
+	icon_state = "off"
+	layer = ABOVE_OBJ_LAYER
 
 #undef BUILDSTATE_FUNCTIONAL
 #undef BUILDSTATE_DAMAGE_WELD
