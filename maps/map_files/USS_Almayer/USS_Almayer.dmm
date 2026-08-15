@@ -19117,8 +19117,10 @@
 /turf/open/floor/almayer/no_build/plate,
 /area/almayer/shipboard/navigation)
 "aYB" = (
-/obj/structure/machinery/power/smes/buildable,
-/turf/open/floor/almayer/cargo,
+/obj/structure/machinery/power/smes/buildable/reactor{
+	pixel_y = -1
+	},
+/turf/open/floor/almayer,
 /area/almayer/engineering/lower/engine_core)
 "aYC" = (
 /obj/structure/machinery/door/poddoor/almayer/open{
@@ -46806,6 +46808,14 @@
 /obj/structure/machinery/door/airlock/almayer/maint,
 /turf/open/floor/almayer/no_build/plate,
 /area/almayer/underdeck/hangar)
+"cuV" = (
+/obj/structure/platform/metal/almayer,
+/obj/structure/prop/invuln/large_reactor/pipes{
+	icon_state = "pipes_ag6";
+	pixel_y = 8
+	},
+/turf/open/floor/almayer/plating_stripedcorner/east,
+/area/almayer/engineering/lower/engine_core)
 "cuY" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -54527,6 +54537,16 @@
 "fHF" = (
 /turf/open/floor/almayer/greenfull,
 /area/almayer/living/offices)
+"fHH" = (
+/obj/structure/platform/metal/almayer/north,
+/obj/structure/prop/invuln/large_reactor/pipes{
+	icon_state = "pipes_ag6";
+	dir = 1;
+	pixel_y = 4;
+	layer = 4.1
+	},
+/turf/open/floor/almayer/plating_stripedcorner/north,
+/area/almayer/engineering/lower/engine_core)
 "fIg" = (
 /turf/open/floor/almayer/test_floor4,
 /area/almayer/engineering/lower/engine_core)
@@ -56622,6 +56642,16 @@
 	},
 /turf/open/floor/almayer/red/southwest,
 /area/almayer/shipboard/brig/processing)
+"gDB" = (
+/obj/structure/platform/metal/almayer/north,
+/obj/structure/prop/invuln/large_reactor/pipes{
+	icon_state = "pipes_ag6";
+	dir = 1;
+	pixel_y = 4;
+	layer = 4.1
+	},
+/turf/open/floor/almayer/plating_stripedcorner/south,
+/area/almayer/engineering/lower/engine_core)
 "gDH" = (
 /obj/structure/machinery/cm_vending/sorted/medical/wall_med{
 	pixel_y = 25
@@ -57117,6 +57147,14 @@
 	},
 /turf/open/floor/almayer/plate,
 /area/almayer/squads/charlie_delta_shared)
+"gNt" = (
+/obj/structure/prop/invuln/large_reactor/pipes{
+	icon_state = "pipes_ag1";
+	pixel_y = 4;
+	dir = 1
+	},
+/turf/open/floor/almayer/plating_striped/west,
+/area/almayer/engineering/lower/engine_core)
 "gNy" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "W"
@@ -60409,8 +60447,10 @@
 /turf/open/floor/almayer/orange/north,
 /area/almayer/engineering/lower)
 "ikK" = (
-/obj/structure/platform/metal/almayer,
-/turf/open/floor/almayer/plating_stripedcorner/east,
+/obj/structure/terminal{
+	pixel_y = -2
+	},
+/turf/open/floor/almayer/orangefull2,
 /area/almayer/engineering/lower/engine_core)
 "ikQ" = (
 /obj/structure/surface/table/woodentable/fancy,
@@ -63940,6 +63980,14 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/almayer/plate,
 /area/almayer/living/briefing)
+"jLZ" = (
+/obj/structure/prop/invuln/large_reactor/pipes{
+	icon_state = "pipes_ag1";
+	pixel_y = 4;
+	dir = 1
+	},
+/turf/open/floor/almayer/plating_striped/east,
+/area/almayer/engineering/lower/engine_core)
 "jMa" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "E";
@@ -65063,10 +65111,6 @@
 	},
 /turf/open/floor/almayer/test_floor4,
 /area/almayer/maint/hull/upper/u_a_s)
-"kiT" = (
-/obj/structure/platform/metal/almayer,
-/turf/open/floor/almayer/plating_stripedcorner/west,
-/area/almayer/engineering/lower/engine_core)
 "kiU" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -73765,6 +73809,13 @@
 	},
 /turf/open/floor/almayer/mono,
 /area/almayer/lifeboat_pumps/south1)
+"nUO" = (
+/obj/structure/prop/invuln/large_reactor/pipes{
+	icon_state = "pipes_ag6";
+	pixel_y = 4
+	},
+/turf/open/floor/almayer/plating_stripedcorner/east,
+/area/almayer/engineering/lower/engine_core)
 "nVa" = (
 /obj/structure/bed/chair,
 /obj/effect/decal/warning_stripes{
@@ -76869,6 +76920,14 @@
 	},
 /turf/open/floor/almayer/red/west,
 /area/almayer/shipboard/brig/lobby)
+"peP" = (
+/obj/structure/prop/invuln/large_reactor/pipes{
+	icon_state = "pipes_ag6";
+	dir = 1;
+	pixel_y = 8
+	},
+/turf/open/floor/almayer/plating_stripedcorner/south,
+/area/almayer/engineering/lower/engine_core)
 "pfa" = (
 /obj/structure/pipes/standard/manifold/hidden/supply{
 	dir = 1
@@ -77774,10 +77833,6 @@
 "pBG" = (
 /turf/closed/wall/almayer,
 /area/almayer/command/corporateliaison)
-"pBK" = (
-/obj/structure/terminal,
-/turf/open/floor/almayer,
-/area/almayer/engineering/lower/engine_core)
 "pBU" = (
 /obj/structure/platform/metal/almayer/west,
 /obj/structure/stairs/multiz/up,
@@ -85864,8 +85919,10 @@
 /turf/open/floor/almayer/plate,
 /area/almayer/command/lifeboat)
 "sRf" = (
-/obj/structure/platform/metal/almayer/north,
-/turf/open/floor/almayer/plating_stripedcorner/north,
+/obj/structure/terminal{
+	dir = 1
+	},
+/turf/open/floor/almayer/orangefull2,
 /area/almayer/engineering/lower/engine_core)
 "sSa" = (
 /obj/structure/machinery/door/airlock/almayer/marine/requisitions{
@@ -88566,6 +88623,13 @@
 	},
 /turf/open/floor/almayer/plate,
 /area/almayer/living/port_emb)
+"tYe" = (
+/obj/structure/prop/invuln/large_reactor/pipes{
+	icon_state = "pipes_ag6";
+	pixel_y = 4
+	},
+/turf/open/floor/almayer/plating_stripedcorner/west,
+/area/almayer/engineering/lower/engine_core)
 "tYf" = (
 /obj/structure/machinery/light/red{
 	light_color = "#BB3F3F";
@@ -89237,6 +89301,14 @@
 /obj/effect/spawner/random/tool,
 /turf/open/floor/plating/plating_catwalk,
 /area/almayer/maint/hull/lower/l_f_p)
+"umm" = (
+/obj/structure/platform/metal/almayer,
+/obj/structure/prop/invuln/large_reactor/pipes{
+	icon_state = "pipes_ag6";
+	pixel_y = 8
+	},
+/turf/open/floor/almayer/plating_stripedcorner/west,
+/area/almayer/engineering/lower/engine_core)
 "ump" = (
 /obj/structure/platform/metal/almayer/east,
 /turf/open/floor/almayer/plate,
@@ -90611,6 +90683,14 @@
 	},
 /turf/open/floor/plating,
 /area/almayer/maint/lower/constr)
+"uPS" = (
+/obj/structure/prop/invuln/large_reactor/pipes{
+	icon_state = "pipes_ag1";
+	pixel_y = 8;
+	dir = 1
+	},
+/turf/open/floor/almayer/plating_striped/east,
+/area/almayer/engineering/lower/engine_core)
 "uPW" = (
 /obj/structure/bed/chair{
 	dir = 4
@@ -91504,6 +91584,14 @@
 "vgO" = (
 /turf/closed/wall/almayer/research/containment/wall/east,
 /area/almayer/medical/containment/cell)
+"vgT" = (
+/obj/structure/prop/invuln/large_reactor/pipes{
+	icon_state = "pipes_ag6";
+	dir = 1;
+	pixel_y = 8
+	},
+/turf/open/floor/almayer/plating_stripedcorner/north,
+/area/almayer/engineering/lower/engine_core)
 "vhb" = (
 /turf/open/floor/almayer/red/east,
 /area/almayer/maint/upper/u_a_p)
@@ -95708,12 +95796,6 @@
 "wIQ" = (
 /turf/open/floor/almayer/silvercorner/east,
 /area/almayer/shipboard/brig/cic_hallway)
-"wIW" = (
-/obj/structure/terminal{
-	dir = 1
-	},
-/turf/open/floor/almayer,
-/area/almayer/engineering/lower/engine_core)
 "wIX" = (
 /obj/structure/disposalpipe/up/almayer{
 	dir = 8;
@@ -97897,6 +97979,14 @@
 	},
 /turf/open/floor/almayer/no_build/plating,
 /area/almayer/underdeck/req)
+"xBx" = (
+/obj/structure/prop/invuln/large_reactor/pipes{
+	icon_state = "pipes_ag1";
+	pixel_y = 8;
+	dir = 1
+	},
+/turf/open/floor/almayer/plating_striped/west,
+/area/almayer/engineering/lower/engine_core)
 "xBK" = (
 /obj/structure/closet/firecloset,
 /turf/open/floor/almayer/cargo,
@@ -158847,9 +158937,9 @@ aKQ
 aKQ
 aKQ
 hsy
-sCV
-aPU
-kiT
+vgT
+xBx
+umm
 sov
 sov
 fZl
@@ -158869,9 +158959,9 @@ fTO
 sov
 fZl
 fZl
-sRf
-aPU
-kYL
+fHH
+gNt
+tYe
 hsy
 aKQ
 aKQ
@@ -158950,9 +159040,9 @@ aKQ
 aKQ
 aKQ
 hsy
-pLt
-mZL
-ikK
+peP
+uPS
+cuV
 qYq
 sov
 fZl
@@ -158972,9 +159062,9 @@ qjC
 sov
 fZl
 wQD
-xDd
-mZL
-lOX
+gDB
+jLZ
+nUO
 hsy
 aKQ
 aKQ
@@ -159054,7 +159144,7 @@ aKQ
 aKQ
 hsy
 aYB
-wIW
+pAm
 xgB
 uGB
 pAm
@@ -159076,7 +159166,7 @@ sov
 pAm
 pJa
 uiH
-pBK
+pAm
 aYB
 hsy
 aKQ
@@ -159157,7 +159247,7 @@ aKQ
 aKQ
 hsy
 kFm
-cyu
+sRf
 cyu
 fFr
 pAm
@@ -159179,7 +159269,7 @@ sov
 pAm
 oMM
 cyu
-cyu
+ikK
 tFL
 hsy
 aKQ
@@ -159259,8 +159349,8 @@ aKQ
 aKQ
 aKQ
 hsy
-aYB
-wIW
+pAm
+pAm
 xBc
 dYe
 pAm
@@ -159282,8 +159372,8 @@ sov
 pAm
 oXR
 kot
-pBK
-aYB
+pAm
+pAm
 hsy
 aKQ
 aKQ
@@ -159362,9 +159452,9 @@ aaa
 aKQ
 aKQ
 hsy
-sCV
-aPU
-kiT
+vgT
+xBx
+umm
 bdF
 sov
 fZl
@@ -159384,9 +159474,9 @@ qjC
 sov
 fZl
 hUk
-sRf
-aPU
-kYL
+fHH
+gNt
+tYe
 hsy
 aKQ
 aKQ
@@ -159465,9 +159555,9 @@ aaa
 aKQ
 aKQ
 hsy
-pLt
-mZL
-ikK
+peP
+uPS
+cuV
 sov
 sov
 fZl
@@ -159487,9 +159577,9 @@ vOT
 sov
 fZl
 fZl
-xDd
-mZL
-lOX
+gDB
+jLZ
+nUO
 hsy
 aKQ
 aKQ

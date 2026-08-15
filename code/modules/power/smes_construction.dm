@@ -250,3 +250,17 @@
 			safeties_enabled = !safeties_enabled
 			to_chat(user, SPAN_WARNING("You [safeties_enabled ? "connected" : "disconnected"] the safety circuit."))
 			src.visible_message("[icon2html(src, viewers(src))] <b>[src]</b> beeps: \"Caution. Safety circuit has been: [safeties_enabled ? "re-enabled" : "disabled. Please excercise caution."]\"")
+
+/obj/structure/machinery/power/smes/buildable/reactor
+	icon = 'icons/obj/structures/machinery/large_power.dmi'
+
+/obj/structure/machinery/power/smes/buildable/reactor/charged
+	charge = 1e+006
+
+	// Failing SMES has special icon overlay.
+/obj/structure/machinery/power/smes/buildable/reactor/updateicon()
+	if (failing)
+		overlays.Cut()
+		overlays += image('icons/obj/structures/machinery/large_power.dmi', "smes_crit")
+	else
+		..()
