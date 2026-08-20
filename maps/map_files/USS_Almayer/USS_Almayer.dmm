@@ -53151,6 +53151,11 @@
 /obj/structure/largecrate/random,
 /turf/open/floor/almayer/no_build/plate,
 /area/almayer/underdeck/req)
+"faq" = (
+/obj/structure/platform/metal/almayer_smooth,
+/obj/structure/platform/metal/almayer_smooth/north,
+/turf/open_space,
+/area/space)
 "far" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "E";
@@ -57086,6 +57091,11 @@
 /obj/item/device/flashlight/lamp,
 /turf/open/floor/almayer/plate,
 /area/almayer/engineering/lower/workshop)
+"gMh" = (
+/obj/structure/platform/metal/almayer_smooth/north,
+/obj/structure/platform_decoration/metal/almayer_smooth,
+/turf/open_space,
+/area/space)
 "gMk" = (
 /obj/structure/pipes/standard/simple/hidden/supply,
 /obj/structure/sign/safety/maint{
@@ -58811,6 +58821,11 @@
 	},
 /turf/open/floor/almayer,
 /area/almayer/shipboard/starboard_missiles)
+"hxJ" = (
+/obj/structure/platform/metal/almayer_smooth,
+/obj/structure/platform_decoration/metal/almayer_smooth/west,
+/turf/open_space,
+/area/space)
 "hxT" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/almayer/no_build/test_floor4,
@@ -83636,6 +83651,9 @@
 	},
 /turf/open/floor/almayer/no_build/plating,
 /area/almayer/underdeck/req)
+"rRC" = (
+/turf/open/floor/almayer/cargo,
+/area/almayer/engineering/lower/engine_core)
 "rRP" = (
 /obj/effect/decal/heavy_cable/cable_horizontal,
 /obj/effect/decal/cleanable/dirt,
@@ -96983,6 +97001,10 @@
 /obj/structure/platform_decoration/metal/almayer,
 /turf/open/floor/almayer/plate,
 /area/almayer/maint/hull/upper/u_a_s)
+"xgA" = (
+/obj/structure/platform/metal/almayer_smooth/east,
+/turf/closed/wall/almayer/reinforced,
+/area/space)
 "xgJ" = (
 /turf/open/floor/almayer/sterile_green_side/north,
 /area/almayer/medical/lockerroom)
@@ -158931,9 +158953,9 @@ aKQ
 aKQ
 aKQ
 hsy
-sCV
-aPU
-kYL
+rRC
+rRC
+rRC
 sov
 cuV
 fZl
@@ -158953,9 +158975,9 @@ fTO
 sov
 gDB
 fZl
-sCV
-aPU
-kYL
+rRC
+rRC
+rRC
 hsy
 aKQ
 aKQ
@@ -159034,9 +159056,9 @@ aKQ
 aKQ
 aKQ
 hsy
-pLt
-mZL
-lOX
+iKx
+iKx
+iKx
 qYq
 cuV
 fZl
@@ -159056,9 +159078,9 @@ qjC
 sov
 gDB
 fZl
-pLt
-mZL
-lOX
+iKx
+iKx
+iKx
 hsy
 aKQ
 aKQ
@@ -159446,10 +159468,10 @@ aaa
 aKQ
 aKQ
 hsy
-sCV
-aPU
-kYL
-bdF
+glK
+glK
+glK
+hsy
 cuV
 fZl
 jpk
@@ -159467,10 +159489,10 @@ pjD
 qjC
 sov
 gDB
-fZl
-sCV
-aPU
-kYL
+hsy
+glK
+glK
+glK
 hsy
 aKQ
 aKQ
@@ -159549,10 +159571,10 @@ aaa
 aKQ
 aKQ
 hsy
-pLt
-mZL
-lOX
-sov
+rRC
+rRC
+rRC
+hsy
 cuV
 fZl
 dco
@@ -159570,10 +159592,10 @@ ibs
 vOT
 sov
 gDB
-fZl
-pLt
-mZL
-lOX
+hsy
+rRC
+rRC
+rRC
 hsy
 aKQ
 aKQ
@@ -188391,8 +188413,8 @@ bee
 bht
 bht
 bht
-bee
-bee
+bht
+bto
 qpR
 pYy
 bth
@@ -188412,8 +188434,8 @@ cZZ
 prt
 nLu
 rXo
-bee
-bee
+bto
+bht
 bht
 bht
 bht
@@ -189111,7 +189133,7 @@ bee
 bht
 aSP
 bht
-bht
+eST
 bto
 mMn
 btq
@@ -189214,7 +189236,7 @@ bee
 bht
 aSP
 bht
-bht
+eST
 bto
 mMn
 btq
@@ -189420,7 +189442,7 @@ bee
 bht
 aSP
 bht
-bht
+eST
 bto
 mMn
 btq
@@ -189523,7 +189545,7 @@ bee
 bht
 aSP
 bht
-bht
+eST
 bto
 mMn
 btq
@@ -190247,8 +190269,8 @@ bht
 bht
 bht
 bto
-mMn
-cZZ
+vIS
+hxJ
 bth
 mMn
 btq
@@ -190264,8 +190286,8 @@ btq
 btq
 cZZ
 prt
-mMn
-cZZ
+gMh
+ckW
 bto
 bht
 bht
@@ -190350,8 +190372,8 @@ bht
 bht
 bee
 bee
-mMn
-cZZ
+bee
+faq
 bth
 mMn
 btq
@@ -190367,8 +190389,8 @@ btq
 btq
 cZZ
 prt
-mMn
-cZZ
+bfB
+bee
 bee
 bee
 bht
@@ -190453,8 +190475,8 @@ bht
 bht
 bht
 bee
-vIS
-ckW
+bee
+bbF
 bth
 vIS
 ufN
@@ -190470,8 +190492,8 @@ ufN
 ufN
 jsZ
 prt
-vIS
-ckW
+bfg
+xgA
 bee
 bht
 bht
